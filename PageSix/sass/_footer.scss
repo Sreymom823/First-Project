@@ -1,0 +1,28 @@
+@import 'variable';
+.foot{
+    width: 100%;
+    background-color: $fontcolor;
+    @include proflex(flex,center,column);
+    align-items: center;
+    margin-bottom: 5%;
+    margin-top: 5%;
+    .footer{
+        margin-top: 5%;
+        width: 100%;
+        @include flexjc (flex,space-around);
+        .f-left ,.f-center ,.f-right{
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            .left{
+                margin: 5px;
+                display: flex;
+                gap: 10px;
+            
+            }
+        }
+    }
+}
+
+
+

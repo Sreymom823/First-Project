@@ -1,0 +1,30 @@
+@import 'variable';
+@import 'btn';
+.maincontant{
+    .nav1{
+        display: none;
+    }
+    width: 100%;
+    // height: 100%;
+    padding-bottom: 5% ;
+    padding-top: 3%;
+    background-color: white;
+    @include proflex(flex,center,column);
+    align-items: center;
+    
+    .content{
+        // background-color: rgb(156, 243, 16);
+        @include proflex(flex,center,column);
+        align-items: center;
+        width: 90%;
+        .bt-search{
+            @include proali (flex,center,center);
+            button{
+                // border: none;
+                background-color:$navcolor;
+                border: grey 2px solid;
+            }
+        }
+       
+    }
+}
